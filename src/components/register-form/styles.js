@@ -28,11 +28,14 @@ export default makeStyles(theme => ({
 	registerForm__errorMessage: {
 		display: 'block',
 		width: '100%',
-		height: '15px',
+      height: '15px',
+      // margin: '-.5em auto',
+      marginTop: '-1em',
 		marginBottom: '.5em',
 		color: 'rgb(245, 41, 41)',
 		fontSize: '.75rem',
-		fontWeight: '800',
+      fontWeight: '800',
+      textAlign: 'center',
 	},
 	registerForm__heading: {
 		marginBottom: '.7em',
@@ -63,7 +66,7 @@ export default makeStyles(theme => ({
 	},
 	registerForm__paperStyle: {
 		maxWidth: '420px',
-		maxHeight: '550px',
+		maxHeight: '560px',
 		margin: '2em auto',
 		padding: '2.5em 1.25em',
 		paddingBottom: '1em',
