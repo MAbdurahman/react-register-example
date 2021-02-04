@@ -6,10 +6,11 @@ export default makeStyles(theme => ({
 		// textAlign: 'center',
 	},
 	registerForm__buttonStyle: {
-		margin: '1em 0',
+		width: '92%',
+		margin: '1em auto',
 		marginBottom: '.5em',
 		fontSize: '1.3rem',
-		fontWeight: 500,
+		fontWeight: '500',
 		letterSpacing: '2px',
 		textTransform: 'capitalize',
 		backgroundColor: '#423E37',
@@ -66,7 +67,7 @@ export default makeStyles(theme => ({
 	},
 	registerForm__paperStyle: {
 		maxWidth: '420px',
-		maxHeight: '650px',
+		maxHeight: '640px',
 		margin: '2em auto',
 		padding: '2.5em 1.25em',
 		paddingBottom: '1em',
@@ -85,6 +86,6 @@ export default makeStyles(theme => ({
 	},
 	registerForm__textFieldStyle: {
 		width: '80%',
-		marginBottom: '1em',
+		// marginBottom: '1em',
 	},
 }));

@@ -120,10 +120,10 @@ export default function RegisterForm() {
                      <Grid className={classes.registerForm__textFieldContainer}>
                         <AccountCircleIcon className={classes.registerForm__textFieldIcon} />
                         <Field as={TextField}
+                        className={classes.registerForm__textFieldStyle}
                            type='text'
                            name='name'
                            label='Name'
-                           fullWidth
                         />
                      </Grid>
                      <ErrorMessage
@@ -134,10 +134,10 @@ export default function RegisterForm() {
                      <Grid className={classes.registerForm__textFieldContainer}>
                         <PhoneIcon className={classes.registerForm__textFieldIcon} />
                         <Field as={TextField}
+                        className={classes.registerForm__textFieldStyle}
                            type='text'
                            name='phone'
                            label='Phone'
-                           fullWidth
                         />
                      </Grid>
                      <ErrorMessage
@@ -147,7 +147,12 @@ export default function RegisterForm() {
                      />
                      <Grid className={classes.registerForm__textFieldContainer}>
                         <EmailIcon className={classes.registerForm__textFieldIcon} />
-                        <Field as={TextField} type='email' name='email' label='Email' fullWidth />
+                        <Field as={TextField}
+                        className={classes.registerForm__textFieldStyle}
+                           type='email'
+                           name='email'
+                           label='Email'
+                        />
                      </Grid>
                      <ErrorMessage
                         className={classes.registerForm__errorMessage}
@@ -157,10 +162,10 @@ export default function RegisterForm() {
                      <Grid className={classes.registerForm__textFieldContainer}>
                         <LockIcon className={classes.registerForm__textFieldIcon} />
                         <Field as={TextField}
+                        className={classes.registerForm__textFieldStyle}
                            type='password'
                            name='password'
                            label='Password'
-                           fullWidth
                         />
                      </Grid>
                      <ErrorMessage
@@ -171,10 +176,10 @@ export default function RegisterForm() {
                      <Grid className={classes.registerForm__textFieldContainer}>
                         <LockOpenIcon className={classes.registerForm__textFieldIcon} />
                         <Field as={TextField}
+                        className={classes.registerForm__textFieldStyle}
                            type='password'
                            name='confirmPassword'
                            label='Confirm Password'
-                           fullWidth
                         />
                      </Grid>
                      <ErrorMessage
@@ -182,15 +187,17 @@ export default function RegisterForm() {
                         name='confirmPassword'
                         component='span'
                      />
-                     <Button
-                        className={classes.registerForm__buttonStyle}
-                        type='submit'
-                        fullWidth
-                        variant='contained'
-                        disabled={isSubmitting}
-                     >
-                        Submit
+                     <Grid className={classes.registerForm__textFieldContainer}>
+                        <Button
+                           className={classes.registerForm__buttonStyle}
+                           type='submit'
+                           fullWidth
+                           variant='contained'
+                           disabled={isSubmitting}
+                        >
+                           Submit
                      </Button>
+                     </Grid>
                   </Form>
                )}
             </Formik>
