@@ -44,18 +44,18 @@ export default function RegisterForm() {
                      errors.name = 'Name is required!';
 
                   } else if (!name_pattern.test(values.name)) {
-                     errors.name = 'First and last name required!';
+                     errors.name = 'First and last name is required!';
                   }
 
                   if (!values.phone) {
-                     errors.phone = 'Phone is required!';
+                     errors.phone = 'Phone number is required!';
 
                   } else if (!phone_pattern.test(values.phone)) {
                      errors.phone = 'Preferred phone pattern is:  123-456-7890!';
                   }
 
                   if (!values.email) {
-                     errors.email = 'Email is required!';
+                     errors.email = 'Email address is required!';
 
                   } else if (!email_pattern.test(values.email)) {
                      errors.email = 'Invalid email address!';
