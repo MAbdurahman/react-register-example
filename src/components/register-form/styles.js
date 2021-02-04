@@ -49,7 +49,7 @@ export default makeStyles(theme => ({
 	registerForm__link: {
 		fontSize: '.8rem',
 		textDecoration: 'none',
-		textTransform: 'capitalize',
+		// textTransform: 'capitalize',
 		color: '#423E37',
 		transition: 'all .5s cubic-bezier(0.25, 0.45, 0.45, 0.95)',
 		'&:hover': {
@@ -66,7 +66,7 @@ export default makeStyles(theme => ({
 	},
 	registerForm__paperStyle: {
 		maxWidth: '420px',
-		maxHeight: '600px',
+		maxHeight: '650px',
 		margin: '2em auto',
 		padding: '2.5em 1.25em',
 		paddingBottom: '1em',
