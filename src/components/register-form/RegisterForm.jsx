@@ -123,7 +123,8 @@ export default function RegisterForm() {
                            type='text'
                            name='name'
                            label='Name'
-                           fullWidth />
+                           fullWidth
+                        />
                      </Grid>
                      <ErrorMessage
                         className={classes.registerForm__errorMessage}
@@ -136,7 +137,8 @@ export default function RegisterForm() {
                            type='text'
                            name='phone'
                            label='Phone'
-                           fullWidth />
+                           fullWidth
+                        />
                      </Grid>
                      <ErrorMessage
                         className={classes.registerForm__errorMessage}
@@ -150,7 +152,8 @@ export default function RegisterForm() {
                      <ErrorMessage
                         className={classes.registerForm__errorMessage}
                         name='email'
-                        component='span' />
+                        component='span'
+                     />
                      <Grid className={classes.registerForm__textFieldContainer}>
                         <LockIcon className={classes.registerForm__textFieldIcon} />
                         <Field as={TextField}
@@ -187,7 +190,7 @@ export default function RegisterForm() {
                         disabled={isSubmitting}
                      >
                         Submit
-            </Button>
+                     </Button>
                   </Form>
                )}
             </Formik>
