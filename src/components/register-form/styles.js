@@ -66,7 +66,7 @@ export default makeStyles(theme => ({
 	},
 	registerForm__paperStyle: {
 		maxWidth: '420px',
-		maxHeight: '560px',
+		maxHeight: '600px',
 		margin: '2em auto',
 		padding: '2.5em 1.25em',
 		paddingBottom: '1em',
