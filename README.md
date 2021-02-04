@@ -1,6 +1,7 @@
-# react-register-form-example
+# react-register-example
 
-This repo is based on an exercise taken from "Beginning React" by Greg Lim.
+This repo is based on an exercise to get familiarized with
+react, material-ui, and formik
 
 First install node_modules folder
 ### `npm install or yarn install`
