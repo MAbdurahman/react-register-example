@@ -41,10 +41,10 @@ export default function RegisterForm() {
                validate={values => {
                   const errors = {};
                   if (!values.name) {
-                     errors.name = 'Name is required!';
+                     errors.name = 'First and last name are required!';
 
                   } else if (!name_pattern.test(values.name)) {
-                     errors.name = 'First and last name is required!';
+                     errors.name = 'Enter first and last name!';
                   }
 
                   if (!values.phone) {
@@ -58,7 +58,7 @@ export default function RegisterForm() {
                      errors.email = 'Email address is required!';
 
                   } else if (!email_pattern.test(values.email)) {
-                     errors.email = 'Invalid email address!';
+                     errors.email = 'Enter valid email address!';
                   }
 
                   if (!values.password) {
@@ -99,78 +99,81 @@ export default function RegisterForm() {
                }}
 
             >
-               <Form noValidate>
-                  <Grid className={classes.registerForm__textFieldContainer}>
-                     <AccountCircleIcon className={classes.registerForm__textFieldIcon} />
-                     <Field as={TextField}
-                        type='text'
+               {({ isSubmitting }) => (
+                  <Form noValidate>
+                     <Grid className={classes.registerForm__textFieldContainer}>
+                        <AccountCircleIcon className={classes.registerForm__textFieldIcon} />
+                        <Field as={TextField}
+                           type='text'
+                           name='name'
+                           label='Name'
+                           fullWidth />
+                     </Grid>
+                     <ErrorMessage
+                        className={classes.registerForm__errorMessage}
                         name='name'
-                        label='Name'
-                        fullWidth />
-                  </Grid>
-                  <ErrorMessage
-                     className={classes.registerForm__errorMessage}
-                     name='name'
-                     component='span'
-                  />
-                  <Grid className={classes.registerForm__textFieldContainer}>
-                     <PhoneIcon className={classes.registerForm__textFieldIcon} />
-                     <Field as={TextField}
-                        type='text'
+                        component='span'
+                     />
+                     <Grid className={classes.registerForm__textFieldContainer}>
+                        <PhoneIcon className={classes.registerForm__textFieldIcon} />
+                        <Field as={TextField}
+                           type='text'
+                           name='phone'
+                           label='Phone'
+                           fullWidth />
+                     </Grid>
+                     <ErrorMessage
+                        className={classes.registerForm__errorMessage}
                         name='phone'
-                        label='Phone'
-                        fullWidth />
-                  </Grid>
-                  <ErrorMessage
-                     className={classes.registerForm__errorMessage}
-                     name='phone'
-                     component='span'
-                  />
-                  <Grid className={classes.registerForm__textFieldContainer}>
-                     <EmailIcon className={classes.registerForm__textFieldIcon} />
-                     <Field as={TextField} type='email' name='email' label='Email' fullWidth />
-                  </Grid>
-                  <ErrorMessage
-                     className={classes.registerForm__errorMessage}
-                     name='email'
-                     component='span' />
-                  <Grid className={classes.registerForm__textFieldContainer}>
-                     <LockIcon className={classes.registerForm__textFieldIcon} />
-                     <Field as={TextField}
-                        type='password'
+                        component='span'
+                     />
+                     <Grid className={classes.registerForm__textFieldContainer}>
+                        <EmailIcon className={classes.registerForm__textFieldIcon} />
+                        <Field as={TextField} type='email' name='email' label='Email' fullWidth />
+                     </Grid>
+                     <ErrorMessage
+                        className={classes.registerForm__errorMessage}
+                        name='email'
+                        component='span' />
+                     <Grid className={classes.registerForm__textFieldContainer}>
+                        <LockIcon className={classes.registerForm__textFieldIcon} />
+                        <Field as={TextField}
+                           type='password'
+                           name='password'
+                           label='Password'
+                           fullWidth
+                        />
+                     </Grid>
+                     <ErrorMessage
+                        className={classes.registerForm__errorMessage}
                         name='password'
-                        label='Password'
-                        fullWidth
+                        component='span'
                      />
-                  </Grid>
-                  <ErrorMessage
-                     className={classes.registerForm__errorMessage}
-                     name='password'
-                     component='span'
-                  />
-                  <Grid className={classes.registerForm__textFieldContainer}>
-                     <LockOpenIcon className={classes.registerForm__textFieldIcon} />
-                     <Field as={TextField}
-                        type='password'
+                     <Grid className={classes.registerForm__textFieldContainer}>
+                        <LockOpenIcon className={classes.registerForm__textFieldIcon} />
+                        <Field as={TextField}
+                           type='password'
+                           name='confirmPassword'
+                           label='Confirm Password'
+                           fullWidth
+                        />
+                     </Grid>
+                     <ErrorMessage
+                        className={classes.registerForm__errorMessage}
                         name='confirmPassword'
-                        label='Confirm Password'
-                        fullWidth
+                        component='span'
                      />
-                  </Grid>
-                  <ErrorMessage
-                     className={classes.registerForm__errorMessage}
-                     name='confirmPassword'
-                     component='span'
-                  />
-                  <Button
-                     className={classes.registerForm__buttonStyle}
-                     type='submit'
-                     fullWidth
-                     variant='contained'
-                  >
-                     Submit
+                     <Button
+                        className={classes.registerForm__buttonStyle}
+                        type='submit'
+                        fullWidth
+                        variant='contained'
+                        disabled={isSubmitting}
+                     >
+                        Submit
             </Button>
-               </Form>
+                  </Form>
+               )}
             </Formik>
             <Typography className={classes.registerForm__linkStyle} >
                <Link className={classes.registerForm__link} href="#" >
