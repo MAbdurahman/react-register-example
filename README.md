@@ -8,3 +8,5 @@ First install node_modules folder
 
 Then to start app in browser at http://localhost:3000
 ### `npm start or yarn start`
+
+![react-register-example](https://user-images.githubusercontent.com/20928980/107029638-f89f7880-6774-11eb-8129-1450008f1ef6.gif)
