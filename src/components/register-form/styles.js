@@ -32,6 +32,9 @@ export default makeStyles(theme => ({
 			color: '#FDEBD3',
 			textTransform: 'uppercase',
 		},
+		'&:disabled': {
+			backgroundColor: '#babcbe !important',
+		},
 	},
 	registerForm__caption: {
 		fontSize: '1rem',

@@ -70,6 +70,9 @@ padding-bottom: 1em;
   color: #FDEBD3;
   text-transform: uppercase;
 }
+#buttonStyle:disabled {
+  background-color: #babcbe !important;
+}
 
 /* .MuiTypography-body1 {
   font-family: 'Montserrat', sans-serif;
