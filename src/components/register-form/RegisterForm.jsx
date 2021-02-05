@@ -84,22 +84,7 @@ export default function RegisterForm() {
                   if (!values.confirmPassword) {
                      errors.confirmPassword = 'Confirmed password is required!';
 
-                  } else if (!lowercase_pattern.test(values.confirmPassword)) {
-                     errors.confirmPassword = 'Confirmed password must have a lowercase character!';
-
-                  } else if (!uppercase_pattern.test(values.confirmPassword)) {
-                     errors.confirmPassword = 'Confirmed password must have an uppercase character!';
-
-                  } else if (!digit_pattern.test(values.confirmPassword)) {
-                     errors.confirmPassword = 'Confirmed password must have a digit character!';
-
-                  } else if (!special_pattern.test(values.confirmPassword)) {
-                     errors.confirmPassword = `Confirmed password must include at least one: '-+_!@#$%^&*?'`;
-
-                  } else if (!password_pattern.test(values.confirmPassword)) {
-                     errors.confirmPassword = 'Confirmed password must have at least 8 characters!';
-
-                  } else if (!values.confirmPassword.match(values.password)) {
+                  }  else if (!values.confirmPassword.match(values.password)) {
                      errors.confirmPassword = 'Confirmed password must match password!';
 
                   }
