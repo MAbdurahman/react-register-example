@@ -14,7 +14,10 @@ export default makeStyles(theme => ({
 		marginTop: '1.25em',
 	},
 	registerForm__buttonStyle: {
-		// width: '92%',
+		// position: 'absolute',
+		// left: '0',
+		// top: '1.5em',
+		width: '92%',
 		margin: '1.5em auto',
 		marginBottom: '.5em',
 		fontSize: '1.3rem',
@@ -81,6 +84,7 @@ export default makeStyles(theme => ({
 		paddingBottom: '1em',
 	},
 	registerForm__textFieldContainer: {
+		position: 'relative',
 		display: 'flex',
 		flexDirection: 'row',
 		flexWrap: 'nowrap',

@@ -176,6 +176,7 @@ export default function RegisterForm() {
                      />
                      <Grid className={classes.registerForm__textFieldContainer}>
                         <Button
+                        id='buttonStyle'
                            className={classes.registerForm__buttonStyle}
                            type='submit'
                            variant='contained'
