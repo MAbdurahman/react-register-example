@@ -7,15 +7,15 @@ export default makeStyles(theme => ({
 	},
 	registerForm__buttonContainer: {
 		display: 'flex',
-		flexDirection: 'column',
+		flexDirection: 'row',
 		flexWrap: 'nowrap',
 		alignItems: 'center',
 		justifyContent: 'center',
 		marginTop: '1.25em',
 	},
 	registerForm__buttonStyle: {
-		width: '92%',
-		margin: '1.5em auto !important',
+		// width: '92%',
+		margin: '1.5em auto',
 		marginBottom: '.5em',
 		fontSize: '1.3rem',
 		fontWeight: '500',

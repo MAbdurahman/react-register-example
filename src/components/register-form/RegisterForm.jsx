@@ -87,6 +87,8 @@ export default function RegisterForm() {
                   }  else if (!values.confirmPassword.match(values.password)) {
                      errors.confirmPassword = 'Confirmed password must match password!';
 
+                  } else if (values.confirmPassword.length !== values.password.length) {
+                     errors.confirmPassword = 'Confirmed password must match password!';
                   }
 
                   return errors;
@@ -176,8 +178,8 @@ export default function RegisterForm() {
                         <Button
                            className={classes.registerForm__buttonStyle}
                            type='submit'
-                           fullWidth
                            variant='contained'
+                           fullWidth
                            disabled={isSubmitting}
                         >
                            Submit
