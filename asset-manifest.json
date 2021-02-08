@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/MAbdurahman/react-register-example.git/static/css/main.060e337d.chunk.css",
-    "main.js": "/MAbdurahman/react-register-example.git/static/js/main.b61a9cdd.chunk.js",
-    "main.js.map": "/MAbdurahman/react-register-example.git/static/js/main.b61a9cdd.chunk.js.map",
-    "runtime-main.js": "/MAbdurahman/react-register-example.git/static/js/runtime-main.33b4b930.js",
-    "runtime-main.js.map": "/MAbdurahman/react-register-example.git/static/js/runtime-main.33b4b930.js.map",
-    "static/js/2.c06eedee.chunk.js": "/MAbdurahman/react-register-example.git/static/js/2.c06eedee.chunk.js",
-    "static/js/2.c06eedee.chunk.js.map": "/MAbdurahman/react-register-example.git/static/js/2.c06eedee.chunk.js.map",
-    "static/js/3.8639b034.chunk.js": "/MAbdurahman/react-register-example.git/static/js/3.8639b034.chunk.js",
-    "static/js/3.8639b034.chunk.js.map": "/MAbdurahman/react-register-example.git/static/js/3.8639b034.chunk.js.map",
-    "index.html": "/MAbdurahman/react-register-example.git/index.html",
-    "static/css/main.060e337d.chunk.css.map": "/MAbdurahman/react-register-example.git/static/css/main.060e337d.chunk.css.map",
-    "static/js/2.c06eedee.chunk.js.LICENSE.txt": "/MAbdurahman/react-register-example.git/static/js/2.c06eedee.chunk.js.LICENSE.txt"
+    "main.css": "/react-register-example/static/css/main.060e337d.chunk.css",
+    "main.js": "/react-register-example/static/js/main.b61a9cdd.chunk.js",
+    "main.js.map": "/react-register-example/static/js/main.b61a9cdd.chunk.js.map",
+    "runtime-main.js": "/react-register-example/static/js/runtime-main.993c7921.js",
+    "runtime-main.js.map": "/react-register-example/static/js/runtime-main.993c7921.js.map",
+    "static/js/2.c06eedee.chunk.js": "/react-register-example/static/js/2.c06eedee.chunk.js",
+    "static/js/2.c06eedee.chunk.js.map": "/react-register-example/static/js/2.c06eedee.chunk.js.map",
+    "static/js/3.8639b034.chunk.js": "/react-register-example/static/js/3.8639b034.chunk.js",
+    "static/js/3.8639b034.chunk.js.map": "/react-register-example/static/js/3.8639b034.chunk.js.map",
+    "index.html": "/react-register-example/index.html",
+    "static/css/main.060e337d.chunk.css.map": "/react-register-example/static/css/main.060e337d.chunk.css.map",
+    "static/js/2.c06eedee.chunk.js.LICENSE.txt": "/react-register-example/static/js/2.c06eedee.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.33b4b930.js",
+    "static/js/runtime-main.993c7921.js",
     "static/js/2.c06eedee.chunk.js",
     "static/css/main.060e337d.chunk.css",
     "static/js/main.b61a9cdd.chunk.js"
