@@ -85,7 +85,7 @@ export default function RegisterForm() {
                   if (!values.confirmPassword) {
                      errors.confirmPassword = 'Confirmed password is required!';
 
-                  }  else if (!values.confirmPassword.match(values.password)) {
+                  } else if (!values.confirmPassword.match(values.password)) {
                      errors.confirmPassword = 'Confirmed password must match password!';
 
                   } else if (values.confirmPassword.length !== values.password.length) {
@@ -108,7 +108,7 @@ export default function RegisterForm() {
                      <Grid className={classes.registerForm__textFieldContainer}>
                         <AccountCircleIcon className={classes.registerForm__textFieldIcon} />
                         <Field as={TextField}
-                        className={classes.registerForm__textFieldStyle}
+                           className={classes.registerForm__textFieldStyle}
                            type='text'
                            name='name'
                            label='Name'
@@ -122,7 +122,7 @@ export default function RegisterForm() {
                      <Grid className={classes.registerForm__textFieldContainer}>
                         <PhoneIcon className={classes.registerForm__textFieldIcon} />
                         <Field as={TextField}
-                        className={classes.registerForm__textFieldStyle}
+                           className={classes.registerForm__textFieldStyle}
                            type='text'
                            name='phone'
                            label='Phone'
@@ -136,7 +136,7 @@ export default function RegisterForm() {
                      <Grid className={classes.registerForm__textFieldContainer}>
                         <EmailIcon className={classes.registerForm__textFieldIcon} />
                         <Field as={TextField}
-                        className={classes.registerForm__textFieldStyle}
+                           className={classes.registerForm__textFieldStyle}
                            type='email'
                            name='email'
                            label='Email'
@@ -150,7 +150,7 @@ export default function RegisterForm() {
                      <Grid className={classes.registerForm__textFieldContainer}>
                         <LockIcon className={classes.registerForm__textFieldIcon} />
                         <Field as={TextField}
-                        className={classes.registerForm__textFieldStyle}
+                           className={classes.registerForm__textFieldStyle}
                            type='password'
                            name='password'
                            label='Password'
@@ -164,7 +164,7 @@ export default function RegisterForm() {
                      <Grid className={classes.registerForm__textFieldContainer}>
                         <LockOpenIcon className={classes.registerForm__textFieldIcon} />
                         <Field as={TextField}
-                        className={classes.registerForm__textFieldStyle}
+                           className={classes.registerForm__textFieldStyle}
                            type='password'
                            name='confirmPassword'
                            label='Confirm Password'
@@ -177,7 +177,7 @@ export default function RegisterForm() {
                      />
                      <Grid className={classes.registerForm__textFieldContainer}>
                         <Button
-                        id='buttonStyle'
+                           id='buttonStyle'
                            className={classes.registerForm__buttonStyle}
                            type='submit'
                            variant='contained'
@@ -185,7 +185,7 @@ export default function RegisterForm() {
                            disabled={isSubmitting}
                         >
                            Submit
-                     </Button>
+                        </Button>
                      </Grid>
                   </Form>
                )}
